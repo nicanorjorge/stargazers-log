@@ -1,0 +1,48 @@
+{
+  "events": [
+    {
+      "type": "starred",
+      "created_at": "2025-02-14T10:30:00Z",
+      "repository": {
+        "name": "astro",
+        "full_name": "withastro/astro",
+        "url": "https://github.com/withastro/astro",
+        "description": "The web framework for content-driven websites.",
+        "language": "TypeScript"
+      }
+    },
+    {
+      "type": "starred",
+      "created_at": "2025-01-28T16:45:00Z",
+      "repository": {
+        "name": "svelte",
+        "full_name": "sveltejs/svelte",
+        "url": "https://github.com/sveltejs/svelte",
+        "description": "Cybernetically enhanced web apps.",
+        "language": "TypeScript"
+      }
+    },
+    {
+      "type": "starred",
+      "created_at": "2025-01-09T08:15:00Z",
+      "repository": {
+        "name": "ripgrep",
+        "full_name": "BurntSushi/ripgrep",
+        "url": "https://github.com/BurntSushi/ripgrep",
+        "description": "A line-oriented search tool that recursively searches your current directory.",
+        "language": "Rust"
+      }
+    },
+    {
+      "type": "starred",
+      "created_at": "2024-12-19T13:20:00Z",
+      "repository": {
+        "name": "lucide",
+        "full_name": "lucide-icons/lucide",
+        "url": "https://github.com/lucide-icons/lucide",
+        "description": "Beautiful & consistent icon toolkit.",
+        "language": "TypeScript"
+      }
+    }
+  ]
+}
