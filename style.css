@@ -1,0 +1,190 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", sans-serif;
+  color: #202b28;
+  background: #f5f7f4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --ink-muted: #68736e;
+  --line: #dce3dd;
+  --accent: #23755b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+.page-shell {
+  width: min(100% - 40px, 760px);
+  margin: 0 auto;
+  padding: 76px 0 96px;
+}
+
+.page-header {
+  padding-bottom: 42px;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 12px;
+  font-family: Georgia, serif;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.intro {
+  margin-bottom: 0;
+  color: var(--ink-muted);
+  font-size: 1.05rem;
+}
+
+.starred-section {
+  padding-top: 32px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  font-weight: 650;
+}
+
+.event-count {
+  display: inline-grid;
+  min-width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--ink-muted);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.status {
+  min-height: 1.5em;
+  margin-bottom: 12px;
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+}
+
+.status:empty {
+  display: none;
+}
+
+.status[data-state="error"] {
+  color: #a63e35;
+}
+
+.events-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.event-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 20px;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+}
+
+.repo-link {
+  width: fit-content;
+  color: var(--accent);
+  font-size: 1.05rem;
+  font-weight: 650;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.repo-link:hover {
+  color: #164b3a;
+}
+
+.repo-full-name {
+  display: block;
+  margin-top: 3px;
+  color: var(--ink-muted);
+  font-size: 0.82rem;
+}
+
+.event-date {
+  padding-top: 3px;
+  color: var(--ink-muted);
+  font-size: 0.82rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.repo-description {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #3d4944;
+  line-height: 1.55;
+}
+
+.repo-language {
+  grid-column: 1 / -1;
+  width: fit-content;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background: #e5eee8;
+  color: #315a46;
+  font-size: 0.74rem;
+}
+
+@media (max-width: 520px) {
+  .page-shell {
+    width: min(100% - 32px, 760px);
+    padding-top: 48px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .event-item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 7px;
+  }
+
+  .event-date {
+    grid-row: 2;
+    text-align: left;
+  }
+
+  .repo-description,
+  .repo-language {
+    grid-column: 1;
+  }
+}
